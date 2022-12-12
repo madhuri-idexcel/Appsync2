@@ -1,0 +1,9 @@
+type Book {
+  id: ID!
+  authorId: ID!
+}
+
+
+extend type Query {
+  userById(id: ID!): Book
+}
